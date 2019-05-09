@@ -1,3 +1,906 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+title {
+    display: none;
+}
+
+/* Utilities */
+.btn {
+    border: 2px solid black;
+    text-align: center;
+    font-size: 24px;
+    padding: 8px 40px;
+    width: 217px;
+    margin-right: 5px;
+}
+
+.btn-learn-more {
+    border: 1.5px solid black;
+    border-radius: 9px;
+    width: 176px;
+    height: 45px;
+    padding: 13px 0;
+    font-size: 15px;
+}
+
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1090px;
+    margin: 34px auto 0 auto;
+}
+
+
+.nav-link-container {
+    display: flex;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    margin-right: 88px;
+}
+
+nav img {
+    margin-left: 30px;
+    width: 232px;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 88px 160px 94px 301px;
+    width: 1000px;
+}
+
+header .innovation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 100px;
+    text-align: center;
+    line-height: 0.97;
+}
+
+header img {
+    width: 475px;
+    margin-left: 100px;
+
+}
+
+/* Top Section */
+
+.top-section {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px auto 0 auto;
+    border-top: 2px solid black;
+    width: 1092px;
+}
+
+.top-section div {
+    margin-top: 46px;
+    height: 177px;
+}
+
+.top-section h3 {
+    margin-bottom: 17px;
+    font-size: 21px;
+}
+
+.top-section p {
+    line-height: 1.15;
+    font-size: 20px;
+}
+
+.features {
+    width: 556px;
+}
+
+.about {
+    width: 535px;
+}
+
+/* Middle Section */
+
+.middle-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 150px 0 153px;
+}
+
+.middle-img {
+    width: 1094px;
+    height: 228px;
+}
+
+/* Bottom Section */
+
+.bottom-section {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    margin: 47px auto 0 auto;
+    width: 1098px;
+}
+
+.bottom-section h3 {
+    margin-bottom: 17px;
+    font-size: 21px;
+}
+
+.bottom-section p {
+    line-height: 1.15;
+    font-size: 20px;
+}
+
+.bottom-section div {
+    width: 33%;
+    padding-bottom: 60px;
+}
+
+.product {
+    padding-left: 10px;
+}
+
+.vision {
+    padding-left: 15px;
+}
+
+/* Contact Section */
+
+.contact {
+    margin: 47px 0 0 215px;
+    width: 235px;
+}
+
+.contact h3 {
+    font-size: 21px;
+    margin-bottom: 21px;
+}
+
+.contact address {
+    font-size: 20px;
+}
+
+.contact p {
+    font-size: 20px;
+    margin: 26px 0;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 215px;
+}
+
+/* -----SERVICES SPECIFIC CSS----- */
+
+.services-header {
+    flex-direction: column;
+    justify-content: baseline;
+    width: 1100px;
+    margin: 31px 0 0 210px;
+    border-bottom: 2px solid black;
+}
+
+.services-header-img {
+    width: 1100px;
+    margin: 0 0 40px 0px;
+}
+
+.services-header-text {
+    margin-bottom: 52px;
+}
+
+.services-header-text h1 {
+    font-size: 34px;
+    text-align: left;
+    line-height: 0.97;
+    margin-bottom: 21px;
+}
+
+.services-header-text p {
+    font-size: 20px;
+    line-height: 1.16;
+}
+
+/* Learn More Middle Section */
+
+.learn-more-section {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 1100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+}
+
+.learn-more-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 47.75%;
+    background: lightgrey;
+    border: 1.5px solid black;
+    height: 316px;
+    margin: 49px 0px 0px 0px;
+}
+
+.learn-more-box-content {
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 0 26px;
+    height: 297px;
+    justify-content: space-evenly;
+}
+
+.learn-more-box-content h3 {
+    font-size: 20px;
+}
+
+.learn-more-box-content p {
+    margin: -11px 0 10px 0;
+    font-size: 20px;
+    width: 463px;
+    line-height: 1.25;
+}
+
+/* Facts Bottom Section */
+
+.facts-section {
+    display: flex;
+    justify-content: baseline;
+    width: 1100px;
+    margin: 44px auto 0 auto;
+}
+
+.facts-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 46%;
+    margin-right: 69px;
+    height: 353px;
+}
+
+.facts-container h3 {
+    font-size: 21px;
+    margin-top: 7px;
+}
+
+.facts-container p {
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 34px;
+}
+
+.facts-section ul {
+    margin: 0px 0 0 22px;
+}
+
+.facts-section ul li {
+    list-style-type: square;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.facts-section ul li span {
+    font-size: 21px;
+    margin-left: 7px;
+}
+
+.facts-section img {
+    width: 524px;
+    height: 374px;
+    margin-top: 6px;
+}
+
+.services-footer {
+    margin-bottom: 25px;
+    margin-top: 111px;
+    font-size: 21px;
+}
+
+
+@media all and (max-width: 800px) {
+
+    /* Utilites */
+    .btn {
+        border: 2px solid black;
+        text-align: center;
+        font-size: 18px;
+        padding: 6px 39px;
+        width: 171px;
+        margin: 0;
+    }
+
+    /* Container */
+    .container {
+        width: 100%;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .logo-container {
+        order: -1;
+        margin: 0;
+    }
+
+    .nav-link-container {
+        display: flex;
+        justify-content: space-between;
+        width: 91%;
+        margin: 37px 32px 0 0;
+    }
+
+    nav a {
+        color: grey;
+        text-decoration: none;
+        margin: 0 0 0 0;
+    }
+
+    nav img {
+        margin: 0;
+        width: 185px;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    header .innovation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 73px auto 74px auto;
+    }
+
+    header h1 {
+        font-size: 73px;
+        text-align: center;
+        line-height: 0.97;
+        margin: 0 0 28px 0;
+    }
+
+
+
+    header img {
+        display: none;
+        margin: 0;
+    }
+
+    /* Top Section */
+
+    .top-section {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto 0 auto;
+        border-top: 2px solid black;
+        width: 97%;
+        height: 191px;
+    }
+
+    .top-section div {
+        height: 177px;
+        margin: 35px 0 0 0;
+        padding: 0 10px 0 0;
+    }
+
+    .top-section h3 {
+        margin: 0 0 17px 0;
+        font-size: 17px;
+    }
+
+    .top-section p {
+        line-height: 1.15;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    /* Middle Section */
+
+    .middle-section {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+    }
+
+    .middle-img {
+        width: 97.5%;
+        height: 158px;
+        margin: 0;
+    }
+
+    /* Bottom Section */
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid black;
+        margin: 0 auto 0 auto;
+        width: 97%;
+        height: 215px;
+    }
+
+    .bottom-section h3 {
+        margin-bottom: 17px;
+        font-size: 17px;
+        margin: 0 0 17px 0;
+    }
+
+    .bottom-section p {
+        line-height: 1.15;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .bottom-section div {
+        width: 31%;
+        padding-bottom: 27px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .product {
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .vision {
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    /* Contact Section */
+
+    .contact {
+        margin: 33px auto 0 auto;
+        width: 95%;
+    }
+
+    .contact-info {
+        width: 160px;
+        margin: 0;
+    }
+
+    .contact h3 {
+        font-size: 17px;
+        margin-bottom: 17px;
+        margin: 0 0 17px 0;
+    }
+
+    .contact address {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .contact p {
+        font-size: 16px;
+        margin: 16px 0 0 0;
+    }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+        margin: 39px 0 0 0;
+    }
+
+
+    @media all and (max-width: 600px) {
+
+        /* Utilites */
+        .btn {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 18px;
+            padding: 6px 39px;
+            width: 171px;
+            margin: 0;
+        }
+
+        /* Navbar */
+        nav {
+            flex-direction: column;
+            width: 100%;
+            margin: 30px auto 0 auto;
+        }
+
+        .logo-container {
+            order: -1;
+            margin: 0;
+        }
+
+        .nav-link-container {
+            flex-direction: column;
+            margin: 9px auto 0 auto;
+            justify-content: baseline;
+            width: 100%;
+        }
+
+        .nav-link {
+            border-top: 1px solid black;
+            width: 100%;
+            text-align: center;
+            margin: 0 0 0 0;
+            padding: 19.5px 0;
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+
+        nav a {
+            color: grey;
+            text-decoration: none;
+            margin: 0 auto 0 auto;
+            font-size: 20px;
+        }
+
+        nav img {
+            margin: 0;
+            width: 185px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        header .innovation {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 52px auto 74px auto;
+        }
+
+        header h1 {
+            font-size: 73px;
+            text-align: center;
+            line-height: 0.97;
+            margin: 0 0 28px 0;
+        }
+
+
+
+        header img {
+            display: none;
+            margin: 0;
+        }
+
+        /* Top Section */
+
+        .top-section {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 0 auto 174px auto;
+            border-top: 2px solid black;
+            /* width: 94%; */
+            height: 191px;
+        }
+
+        .top-section div {
+            height: 177px;
+            margin: 58px 0 0 0;
+            padding: 0 10px 0 0;
+        }
+
+        .top-section h3 {
+            margin: 0 0 17px 0;
+            font-size: 17px;
+        }
+
+        .top-section p {
+            line-height: 1.15;
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .top-section .features {
+            width: 100%;
+        }
+
+        .top-section .about {
+            width: 100%;
+        }
+
+        /* Middle Section */
+
+        .middle-section {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 0 auto;
+            width: 100%;
+        }
+
+        .middle-img {
+            width: 95.5%;
+            height: 97px;
+            margin: 0;
+        }
+
+        /* Bottom Section */
+
+        .bottom-section {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            border-bottom: 2px solid black;
+            margin: 30px auto 0 auto;
+            width: 96%;
+            height: 477px;
+        }
+
+        .bottom-section h3 {
+            margin-bottom: 17px;
+            font-size: 17px;
+            margin: 0 0 17px 0;
+        }
+
+        .bottom-section p {
+            line-height: 1.15;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .bottom-section div {
+            width: 100%;
+            padding-bottom: 78px;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .product {
+            padding-left: 10px;
+            margin: 0;
+        }
+
+        .vision {
+            padding-left: 15px;
+            margin: 0;
+        }
+
+        /* Contact Section */
+
+        .contact {
+            margin: 33px auto 0 auto;
+            width: 94%;
+        }
+
+        .contact-info {
+            width: 160px;
+            margin: 0;
+        }
+
+        .contact h3 {
+            font-size: 17px;
+            margin-bottom: 17px;
+            margin: 0 0 17px 0;
+        }
+
+        .contact address {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin: 16px 0 0 0;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            margin: 39px 0 22px 0;
+        }
