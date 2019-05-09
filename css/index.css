@@ -693,7 +693,7 @@ footer {
     }
 
 
-    @media all and (max-width: 800px) {
+    @media all and (max-width: 600px) {
 
         /* Utilites */
         .btn {
@@ -703,11 +703,6 @@ footer {
             padding: 6px 39px;
             width: 171px;
             margin: 0;
-        }
-
-        /* Container */
-        .container {
-            width: 100%;
         }
 
         /* Navbar */
@@ -723,16 +718,27 @@ footer {
         }
 
         .nav-link-container {
+            flex-direction: column;
+            margin: 9px auto 0 auto;
+            justify-content: baseline;
+            width: 100%;
+        }
+
+        .nav-link {
+            border-top: 1px solid black;
+            width: 100%;
+            text-align: center;
+            margin: 0 0 0 0;
+            padding: 19.5px 0;
             display: flex;
-            justify-content: space-between;
-            width: 91%;
-            margin: 37px 32px 0 0;
+            border-bottom: 1px solid black;
         }
 
         nav a {
             color: grey;
             text-decoration: none;
-            margin: 0 0 0 0;
+            margin: 0 auto 0 auto;
+            font-size: 20px;
         }
 
         nav img {
@@ -754,7 +760,7 @@ footer {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            margin: 73px auto 74px auto;
+            margin: 52px auto 74px auto;
         }
 
         header h1 {
@@ -776,15 +782,16 @@ footer {
         .top-section {
             display: flex;
             justify-content: flex-start;
-            margin: 0 auto 0 auto;
+            flex-direction: column;
+            margin: 0 auto 174px auto;
             border-top: 2px solid black;
-            width: 97%;
+            /* width: 94%; */
             height: 191px;
         }
 
         .top-section div {
             height: 177px;
-            margin: 35px 0 0 0;
+            margin: 58px 0 0 0;
             padding: 0 10px 0 0;
         }
 
@@ -799,17 +806,26 @@ footer {
             margin: 0;
         }
 
+        .top-section .features {
+            width: 100%;
+        }
+
+        .top-section .about {
+            width: 100%;
+        }
+
         /* Middle Section */
 
         .middle-section {
             display: flex;
             justify-content: center;
-            margin: 0 0 30px 0;
+            margin: 0 auto 0 auto;
+            width: 100%;
         }
 
         .middle-img {
-            width: 97.5%;
-            height: 158px;
+            width: 95.5%;
+            height: 97px;
             margin: 0;
         }
 
@@ -817,11 +833,12 @@ footer {
 
         .bottom-section {
             display: flex;
-            justify-content: space-around;
+            justify-content: start;
+            flex-direction: column;
             border-bottom: 2px solid black;
-            margin: 0 auto 0 auto;
-            width: 97%;
-            height: 215px;
+            margin: 30px auto 0 auto;
+            width: 96%;
+            height: 477px;
         }
 
         .bottom-section h3 {
@@ -837,8 +854,8 @@ footer {
         }
 
         .bottom-section div {
-            width: 31%;
-            padding-bottom: 27px;
+            width: 100%;
+            padding-bottom: 78px;
             padding-left: 0;
             margin: 0;
         }
@@ -857,7 +874,7 @@ footer {
 
         .contact {
             margin: 33px auto 0 auto;
-            width: 95%;
+            width: 94%;
         }
 
         .contact-info {
@@ -885,6 +902,5 @@ footer {
 
         footer {
             text-align: center;
-            margin: 39px 0 0 0;
+            margin: 39px 0 22px 0;
         }
-    }
